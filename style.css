@@ -120,9 +120,9 @@ height: auto;
   margin: 0 auto; 
   justify-content:center;
   } 
-.man{
+/* .man{
   box-shadow: 10px 15px;
-}
+} */
 .grid1{
   display: grid;
   grid-template-columns: 50% 50%;
