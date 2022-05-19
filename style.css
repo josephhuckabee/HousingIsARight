@@ -201,6 +201,10 @@ padding: 20px;
   max-width: 500px;
 }
 
+.text{
+  max-wdth: 700px;
+}
+
 footer{
   padding: 30px;
  background-color: #000;
