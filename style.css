@@ -58,12 +58,11 @@ img{
 }
 .contactgrid{
    display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns:40% 60%;
   grid-auto-rows: auto;
-/*   grid-row-gap: 20px; */
-/*   grid-gap: 20px; */
-height: auto;
-  max-width: 1050px;
+  grid-gap: 20px;
+ height: auto;
+  max-width: 950px;
   margin: 0 auto; 
   justify-content:center;
 }
@@ -82,7 +81,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: #FCE95F;
+  color: #196378;
     text-decoration: none;
 }
 
@@ -286,6 +285,13 @@ grid-gap:20px;}
     min-height:400px;
     padding: 20px; 
     margin: auto;
+  }
+
+  .contactgrid{
+    display: grid; 
+    grid-template-columns: 100%;
+      align-items: center;
+    
   }
   }
 
