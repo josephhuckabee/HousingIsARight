@@ -1,79 +1,205 @@
 <!DOCTYPE html>
-<html>
-
-<!--   <script src="script.js"></script> -->
-  
-  
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>HousingNYC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HousingNYC | Housing Is a Human Right</title>
+  <meta name="description" content="HousingNYC advocates for safe, stable housing for all New Yorkers. Learn the causes of homelessness, find resources, and sign the petition." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="HousingNYC | Housing Is a Human Right" />
+  <meta property="og:description" content="Learn about homelessness in NYC, explore resources, and support the petition for immediate action." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="460logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css" />
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-  <body>
-
-  
-  <header>
-<nav>
- <div class="navbar">
- 
-  <div class="dropdown">
-    <button class="dropbtn">Explore
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="index.html">Home</a>
-       <a href="contact.html">Petition</a>
-      <a href="stats.html">Causes</a>
-      <a href="resources.html">Resources</a>
-    </div>
-  </div>
-</div><center>
-  <img src="460logo.png" alt="logo" class="logo"></center>
-</div>
-</nav>
-     
-
-
-
-
-
-
-
-
-
-    
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary">
+      <a class="logo-link" href="index.html">
+        <img src="460logo.png" alt="HousingNYC logo" class="logo" />
+      </a>
+                  <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="stats.html">Contributing Factors</a>
+        <a href="resources.html">Resources</a>
+        <a href="evictions.html">Facing Eviction</a>
+        <a href="housing-laws.html">Housing Laws</a>
+        <a href="rent-regulated.html">Rent Stabilized / Controlled</a>
+        <a href="housing-charities.html">Housing Charities</a>
+        <a href="legal-aid.html">Legal Aid</a>
+        <a href="section-8.html">Section 8</a>
+        <a href="shelters.html">Shelter List</a>
+        <a href="volunteer.html">Volunteer</a>
+      </div>
+      <details class="nav-dropdown">
+        <summary aria-label="Open navigation menu">
+          <span class="hamburger" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span class="visually-hidden">Menu</span>
+        </summary>
+                        <div class="nav-dropdown-links">
+          <a href="index.html">Home</a>
+          <a href="stats.html">Contributing Factors</a>
+          <a href="resources.html">Resources</a>
+          <a href="evictions.html">Facing Eviction</a>
+          <a href="housing-laws.html">Housing Laws</a>
+          <a href="rent-regulated.html">Rent Stabilized / Controlled</a>
+          <a href="housing-charities.html">Housing Charities</a>
+          <a href="legal-aid.html">Legal Aid</a>
+          <a href="section-8.html">Section 8</a>
+          <a href="shelters.html">Shelter List</a>
+          <a href="volunteer.html">Volunteer</a>
+        </div>
+      </details>
+    </nav>
   </header>
-    
-    <img src="homeless.jpeg">
-    
-  <main>
 
-    
-  <section class="container1">
-   <img
- <center>
-    <div class="text"><center>
-      <h1>Anthropos means Human.</h1><hr>
- <h2>More than 45,000 New Yorkers are without housing.
-  <br>
-  Our neighbors, our brothers, and our friends.<br></br>As New Yorkers, we demand Gov. Houchul, Senator Schumer, Senator Gillibrand, and Mayor Adams to take immediate action to address this public health and safety crisis.</h2>
-    </div>  
-  
-      </center>
+  <section class="hero-section snap-section" id="hero">
+    <div class="hero-inner">
+      <div class="hero-intro">
+        <h1>Anthropos means human.</h1>
+        <hr>
+      <h2>Tens of thousands of New Yorkers are without stable housing.</h2>
+      <p>They are our neighbors, our friends, and our family. As New Yorkers, we call on Gov. Hochul, Sen. Schumer, Sen. Gillibrand, and Mayor Mamdani to take immediate action to address this public health and safety crisis.</p>
+      <p>Across NYC, homelessness means people sleeping in shelters, on subways, or outside in dangerous conditions. It increases risks of illness, violence, and long-term trauma, and it makes it harder for families to stay together, keep jobs, and access care. This crisis is not inevitable. It is shaped by policy choices, budgets, and housing laws.</p>
+      <p>That is why it is vital to volunteer, support local providers, and contact elected officials regularly to push for legislation that protects all New Yorkers and expands safe, stable housing.</p>
+      <p class="source">Data point: NYC DHS shelters served 89,119 people in January 2024, including 34,057 asylum seekers. <a href="https://www.osc.ny.gov/press/releases/2025/01/new-york-state-comptroller-dinapoli-nyc-homelessness-reaches">Source: NYS Comptroller (Jan 22, 2025)</a></p>
+      </div>
+      <div class="hero-media">
+        <img
+          class="hero-image"
+          src="homeless-1200.jpeg"
+          srcset="homeless-800.jpeg 800w, homeless-1200.jpeg 1200w, homeless-1600.jpeg 1600w, homeless.jpeg 3000w"
+          sizes="(max-width: 900px) 100vw, 50vw"
+          width="3000"
+          height="2000"
+          alt="New Yorkers experiencing homelessness"
+          loading="eager"
+          decoding="async"
+        >
+      </div>
+    </div>
   </section>
 
-</main>
+  <main id="main" class="snap-container">
 
+    <section id="petition" class="petition snap-section">
+      <h2>Sign the petition</h2>
+      <p>Please sign the petition below to help bring attention to the housing crisis in New York City.</p>
+      <hr>
+      <p>
+        Dear Gov. Hochul, Sen. Schumer, Sen. Gillibrand, and Mayor Mamdani,
+        <br><br>
+        We are New Yorkers.
+        <br><br>
+        Over the last few years, New York City has seen a drastic increase in people without housing. Tens of thousands of New Yorkers need shelter and stable housing. This affects everyone in our city. We demand immediate attention to this public health and safety crisis. We want funding restored for homelessness services and immediate action to place people in safe housing and improve conditions across the city.
+        <br><br>
+        Thank you for your time and attention.
+      </p>
+      <section class="contactgrid">
+        <div>
+          <img src="man3.png" alt="Portrait of a New Yorker" class="shadow" loading="lazy">
+        </div>
+        <div>
+          <form name="petition" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field" class="form">
+            <input type="hidden" name="form-name" value="petition">
+            <p class="honeypot">
+              <label>Do not fill this out if you are human: <input name="bot-field"></label>
+            </p>
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="fname" autocomplete="given-name">
 
-  </center>
-  
-</body>
-  <br><br>
-  <footer>
-   © Copyrights 2022. All rights reserved
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" name="lname" autocomplete="family-name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email">
+
+            <label for="zip">ZIP code</label>
+            <input type="text" id="zip" name="zip" inputmode="numeric" autocomplete="postal-code">
+
+            <div data-netlify-recaptcha="true"></div>
+            <button type="submit">Submit</button>
+          </form>
+          <p class="fineprint">Your information is completely private and will only be shared with us and your elected officials.</p>
+        </div>
+      </section>
+    </section>
+
+    
+    <section class="contact-cards snap-section" id="officials">
+      <section class="intro intro-left">
+      <h2>Contact your elected officials</h2>
+      <p>Reach out to the officials named in the petition using the contacts below.</p>
+    </section>
+
+      <div class="contact-cards-inner">
+        <article class="resource-card">
+        <h3>Mayor Zohran Mamdani</h3>
+        <img class="official-card-img" src="https://www.nyc.gov/adobe/dynamicmedia/deliver/dm-aid--2c8489a5-e4eb-4ff5-8c50-00507eec5fc0/zohran-mamdani.jpg?preferwebp=true&quality=85" alt="Official photo of Mayor Zohran Mamdani">
+        <p>City Hall, New York, NY 10007</p>
+        <a href="https://www.nyc.gov/mayors-office/contact-the-mayor">Contact page</a>
+        <p>City services: Call 311</p>
+        </article>
+        <article class="resource-card">
+        <h3>Governor Kathy Hochul</h3>
+        <img class="official-card-img" src="https://live.staticflickr.com/65535/54621957194_f4346a527d_z.jpg" alt="Official photo of Governor Kathy Hochul">
+        <p>NYS State Capitol Building, Albany, NY 12224</p>
+        <p>Phone: <a href="tel:15184748390">1-518-474-8390</a></p>
+        <a href="https://www.governor.ny.gov/content/governor-contact-form">Contact page</a>
+        </article>
+        <article class="resource-card">
+        <h3>Senator Chuck Schumer</h3>
+        <img class="official-card-img" src="https://www.senate.gov/artandhistory/history/resources/graphic/xlarge/Schumer_CharlesXL.jpg" alt="Official photo of Senator Chuck Schumer">
+        <p>780 Third Avenue, Suite 2301, New York, NY 10017</p>
+        <p>Phone: <a href="tel:12124864430">212-486-4430</a></p>
+        <a href="https://www.schumer.senate.gov/contact">Contact page</a>
+        </article>
+        <article class="resource-card">
+        <h3>Senator Kirsten Gillibrand</h3>
+        <img class="official-card-img" src="https://www.senate.gov/artandhistory/history/resources/graphic/xlarge/gillibrandkirsten.jpg" alt="Official photo of Senator Kirsten Gillibrand">
+        <p>780 Third Ave, Ste 2601, New York, NY 10017</p>
+        <p>Phone: <a href="tel:12126886262">212-688-6262</a></p>
+        <a href="https://www.gillibrand.senate.gov/office-locations/">Contact page</a>
+        </article>
+      </div>
+    </section>
+    <p class="source">Sources: NYC Mayor's Office contact page; NYS Governor contact; Senators' official office locations.</p>
+
+    
+
+    <section class="snap-section" id="district-lookup">
+      <section class="intro intro-left">
+        <h2>Find your local district officials</h2>
+        <p>Enter your address in the tools below to get the exact Council, State, and Congressional representatives for your home.</p>
+      </section>
+      <section class="grid">
+        <div class="resource-card">
+          <h3>NYC Council district lookup</h3>
+          <div class="responsive-embed">
+            <iframe title="NYC Council Find My District" src="https://council.nyc.gov/map-widget/" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <p><a href="https://council.nyc.gov/districts/">Open the Council district map</a></p>
+        </div>
+        <div class="resource-card">
+          <h3>State & federal lookup</h3>
+          <p><a href="https://www.nysenate.gov/find-my-senator">Find your NY State Senator</a></p>
+          <p><a href="https://nyassembly.gov/mem/search/">Find your NY State Assembly Member</a></p>
+          <p><a href="https://www.house.gov/htbin/findrep?ZIP=10002">Find your U.S. House Representative</a></p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    (c) 2026 Anthropos. All rights reserved.
   </footer>
-
+</body>
 </html>

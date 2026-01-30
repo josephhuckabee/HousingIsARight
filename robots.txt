@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://housingnyc.netlify.app/sitemap.xml
