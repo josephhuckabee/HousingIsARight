@@ -106,6 +106,22 @@ a {
   font-size: 1.05em;
 }
 
+.reader-toggle {
+  font-family: "Arsenal", sans-serif;
+  font-size: 1rem;
+  color: var(--accent);
+  background: transparent;
+  border: 1px solid var(--accent);
+  padding: 0.5rem 0.7rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.reader-toggle[aria-pressed="true"] {
+  background: var(--accent);
+  color: var(--black);
+}
+
 a:hover,
 a:focus {
   color: var(--black);
@@ -575,11 +591,147 @@ main {
 }
 
 @media (max-width: 600px) {
+  .reader-toggle {
+    font-size: 0.7rem;
+    padding: 0.35rem 0.45rem;
+  }
+
+  a,
+  button {
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  a {
+    padding: 0.4rem 0.6rem;
+  }
+
+  .form button {
+    padding: 0.55rem 0.7rem;
+  }
+
+  .site-nav {
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .logo {
+    max-height: 22px;
+  }
+
+  .nav-dropdown summary {
+    font-size: 0.5rem;
+    padding: 0.25rem 0.3rem;
+    gap: 0.2rem;
+  }
+
+  .nav-dropdown .hamburger {
+    width: 11px;
+    height: 8px;
+  }
+
+  .nav-dropdown .hamburger span {
+    height: 1px;
+  }
+
   .nav-dropdown-links {
+    min-width: 180px;
+    padding: 0.5rem;
+    gap: 0.35rem;
     max-height: calc(100vh - 96px);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
+
+  .nav-dropdown-links a {
+    font-size: 1.2rem;
+    padding: 0.4rem 0.6rem;
+  }
+}
+
+body.reader-mode {
+  background: #ffffff;
+  color: #111111;
+}
+
+body.reader-mode a {
+  background: transparent;
+  color: #0b3a53;
+  border-color: #0b3a53;
+  text-decoration: underline;
+}
+
+body.reader-mode .hero-section {
+  background: #ffffff;
+  color: #111111;
+}
+
+body.reader-mode .hero-section a {
+  background: transparent;
+  color: #0b3a53;
+  border-color: #0b3a53;
+}
+
+body.reader-mode .hero-image {
+  height: auto;
+  max-height: 420px;
+}
+
+body.reader-mode main,
+body.reader-mode .hero-inner,
+body.reader-mode .contact-cards-inner,
+body.reader-mode .sources-inner,
+body.reader-mode .intro {
+  max-width: 70ch;
+}
+
+body.reader-mode h1,
+body.reader-mode h2,
+body.reader-mode h3,
+body.reader-mode p {
+  max-width: 70ch;
+}
+
+body.reader-mode p {
+  font-size: 1.15em;
+  line-height: 1.8;
+}
+
+body.reader-mode .resource-card,
+body.reader-mode .petition {
+  box-shadow: none;
+  border: 1px solid #e0e0e0;
+}
+
+body.reader-mode .contact-cards,
+body.reader-mode .sources {
+  background: #ffffff;
+  color: #111111;
+}
+
+body.reader-mode .site-header {
+  position: static;
+}
+
+body.reader-mode .snap-section {
+  min-height: auto;
+}
+
+body.reader-mode .snap-section > * {
+  width: 100%;
+  max-width: 70ch;
+}
+
+body.reader-mode .contact-cards {
+  width: 100%;
+  margin-left: 0;
+  transform: none;
+}
+
+body.reader-mode .sources {
+  width: 100%;
+  margin-left: 0;
+  transform: none;
 }
 
 @media (max-width: 1600px) {
